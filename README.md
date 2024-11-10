@@ -17,15 +17,15 @@ To write a program to implement the SVM For Spam Mail Detection.
 ```
 /*
 Program to implement the SVM For Spam Mail Detection..
-Developed by: NARMADHA SREE S
-RegisterNumber:  212223240105
+Developed by:RANJANKUMAR G
+RegisterNumber:  212223240138
 */
-```
-```
+
 import chardet
 file='/content/spam.csv'
 with open(file,'rb') as rawdata:
   result = chardet.detect(rawdata.read(100000))
+
 result
 
 
@@ -56,6 +56,7 @@ svc.fit(x_train,y_train)
 y_pred=svc.predict(x_test)
 y_pred
 
+
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
@@ -77,4 +78,4 @@ accuracy
 ![image](https://github.com/user-attachments/assets/a24c2c2e-dfc8-4588-a46c-f1fe2aa6df1f)
 
 ## Result:
-Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
+Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming
